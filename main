@@ -12,8 +12,8 @@ print(shop['fridge'])
 print('Here\'s what\'s in the produce basket...')
 print(shop['produce basket'])
 def switch(list_one, thing, list_two):
-    list_one.remove('thing')
-    list_two.add('thing')
+    list_one.remove(thing)
+    list_two.append(thing)
 #how do i specify the potatoes in the produce basket shop list???
 #i cant figure this outtttttttt wahhhhhhhh
 shop['produce basket'].remove('potatoes')
@@ -26,7 +26,12 @@ shop['produce basket'].append('potatoes')
 print(shop['produce basket'])
 print('All is well in the Relkin-Rey household.')
 def swap(list_one, thing, list_two):
-    list_one.remove('thing')
-    list_two.append('thing')
-#swap(shop['produce basket'], shop['produce basket'][2], 'shop[fridge]')
+    list_one.remove(thing)
+    list_two.append(thing)
+swap(shop['produce basket'], 'potatoes', shop['fridge'])
 #i still want a function >:(((
+def printing(list_one):
+    print(list_one)
+printing(shop['fridge'][1])
+print(shop['fridge'])
+#bitches we got it. it was so simple im such a fucking dumbass
